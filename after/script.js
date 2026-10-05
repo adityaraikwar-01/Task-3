@@ -1,0 +1,10 @@
+const btn=document.querySelector('button[aria-controls="more"]'),more=document.getElementById('more');
+btn.addEventListener('click',()=>{const open=btn.getAttribute('aria-expanded')==='true';
+btn.setAttribute('aria-expanded',String(!open));more.hidden=open;btn.textContent=open?'Read more':'Read less';});
+document.querySelector('form').addEventListener('submit',e=>{e.preventDefault();
+const st=document.getElementById('status');let first=null;st.textContent='';
+['name','email'].forEach(id=>{const f=document.getElementById(id),er=document.getElementById(id+'-err');
+const bad=!f.value.trim()||(id==='email'&&!f.validity.valid);
+f.setAttribute('aria-invalid',bad);er.textContent=bad?`Please enter a valid ${id}.`:'';if(bad&&!first)first=f;});
+if(first)first.focus();else st.textContent='Thanks! Your message was sent.';});
+document.getElementById('main').addEventListener('keydown',e=>{if(e.key==='Escape'&&!more.hidden)btn.click();});

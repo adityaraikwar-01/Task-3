@@ -1,0 +1,16 @@
+:root{--bg:#fff;--fg:#1a1a1a;--brand:#0b4f9c;--err:#b00020}
+body{font-family:Arial,sans-serif;font-size:1.125rem;line-height:1.6;margin:0;background:var(--bg);color:var(--fg)}
+header{background:var(--brand);color:#fff;padding:.75rem 1rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+header a{color:#fff;padding:.5rem;display:inline-block}
+nav ul{list-style:none;display:flex;gap:1rem;margin:0;padding:0}
+.logo{margin:0;font-weight:bold}
+main{padding:1rem;max-width:45rem;margin:auto}
+a[aria-current]{text-decoration:underline}
+button{background:var(--brand);color:#fff;border:0;padding:.6rem 1rem;font-size:1rem;cursor:pointer;min-height:44px}
+input{display:block;width:100%;max-width:20rem;padding:.5rem;font-size:1rem;border:2px solid #555}
+label{display:block;font-weight:bold}
+.err{color:var(--err);display:block}
+:focus-visible{outline:3px solid #ffbf47;outline-offset:2px;box-shadow:0 0 0 5px #000}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:#fff;color:#000;padding:.5rem;z-index:9}
+footer{background:#222;color:#fff;padding:.75rem 1rem}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}

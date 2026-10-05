@@ -1,0 +1,8 @@
+body{font-family:Arial;margin:0;background:#fff;color:#333}
+.top{background:#4a90d9;padding:12px;display:flex;justify-content:space-between;color:#9cc3ee}
+.menu span{margin-left:16px;cursor:pointer}
+.big{font-size:28px;padding:16px}
+.post{padding:16px}.t{font-size:20px;font-weight:bold}
+.btn{display:inline-block;background:#8fd18f;color:#fff;padding:8px 14px;cursor:pointer}
+*{outline:none}
+.foot{background:#eee;color:#bbb;padding:12px}
